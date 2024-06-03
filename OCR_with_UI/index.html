@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User File Input</title>
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="centered-rectangle">
+      <div class="Head-1">
+        <h1>Please Upload The Document</h1>
+        <p>Maximum upload file size: 5MB</p>
+      </div>
+      <div class="Center-upload" id="dropArea">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Vector" filter="url(#filter0_d_7_136)">
+          <path d="M51.875 65.9871H38.125C35.8391 65.9871 34 64.148 34 61.8621V32.9871H18.9266C15.8672 32.9871 14.3375 29.2918 16.5031 27.1262L42.6453 0.966797C43.9344 -0.322266 46.0484 -0.322266 47.3375 0.966797L73.4969 27.1262C75.6625 29.2918 74.1328 32.9871 71.0734 32.9871H56V61.8621C56 64.148 54.1609 65.9871 51.875 65.9871ZM89 64.6121V83.8621C89 86.148 87.1609 87.9871 84.875 87.9871H5.125C2.83906 87.9871 1 86.148 1 83.8621V64.6121C1 62.3262 2.83906 60.4871 5.125 60.4871H28.5V61.8621C28.5 67.173 32.8141 71.4871 38.125 71.4871H51.875C57.1859 71.4871 61.5 67.173 61.5 61.8621V60.4871H84.875C87.1609 60.4871 89 62.3262 89 64.6121ZM67.6875 79.7371C67.6875 77.8465 66.1406 76.2996 64.25 76.2996C62.3594 76.2996 60.8125 77.8465 60.8125 79.7371C60.8125 81.6277 62.3594 83.1746 64.25 83.1746C66.1406 83.1746 67.6875 81.6277 67.6875 79.7371ZM78.6875 79.7371C78.6875 77.8465 77.1406 76.2996 75.25 76.2996C73.3594 76.2996 71.8125 77.8465 71.8125 79.7371C71.8125 81.6277 73.3594 83.1746 75.25 83.1746C77.1406 83.1746 78.6875 81.6277 78.6875 79.7371Z" fill="#5097B2" style="fill:#5097B2;fill:color(display-p3 0.3137 0.5937 0.6965);fill-opacity:1;"/>
+          </g>
+          <defs>
+          <filter id="filter0_d_7_136" x="0" y="0" width="96" height="95.9871" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dx="3" dy="4"/>
+          <feGaussianBlur stdDeviation="2"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7_136"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7_136" result="shape"/>
+          </filter>
+          </defs>
+          </svg>
+        <p>Drag and drop file here<br> <label for="fileInput" class="file">or select a file</label> from your computer</p>
+        <input type="file" id="fileInput" style="display: none;">
+      </div>
+
+      <div class="button-upload" id="uploadContainer">
+        <button type="button" class="" id="uploadButton">Upload</button>
+      </div>
+      
+      <div id="notification" style="display: none;">
+        <h3 id="notificationText">Upload successful!</h3>
+      </div>
+      
+      <div id="result" style="display: none;">
+        <h3>Processed Image:</h3>
+        <img id="processedImage" src="" alt="Processed Image" style="max-width: 80%;">
+        <h3>OCR Result:</h3>
+        <p id="ocrText"></p>
+      </div>
+      <!-- <div>
+        <h1 class="{% if 'Eligible' in prediction_text %} green {% else %} red {% endif %}">{{prediction_text}}</h1>
+      </div> -->
+
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>

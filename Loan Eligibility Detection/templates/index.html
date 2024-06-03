@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection for Bank Loan</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            margin: 0 auto;
+            width: 30vw;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fraud Detection for Bank Loan</h1>
+    <h2>This is an AI App to check your eligibility for a loan in our bank</h2>
+    <p>Please fill out the form</p>
+    <!-- Main Input for Receiving Query to our ML Model -->
+    <form method="post" action="{{url_for('predict')}}">
+        <p>How Many Dependent(s) do you have?
+            <select name="Dependents">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3+</option>
+            </select>
+        </p>
+
+        <p>Loan Amount you want? (in Dollar)
+            <input type="text" name="LoanAmount" placeholder="Loan Amount" required="required" />
+        </p>
+
+        <p>How long do you want?
+            <select name="Loan_Amount_Term">
+                <option value="" disabled selected>Months</option>
+                <option value="36">36</option>
+                <option value="60">60</option>
+                <option value="84">84</option>
+                <option value="120">120</option>
+                <option value="180">180</option>
+                <option value="240">240</option>
+                <option value="300">300</option>
+                <option value="360">360</option>
+                <option value="480">480</option>
+            </select>
+        </p>
+
+        <p>Do you have credit history?
+            <select name="Credit_History">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </p>
+
+        <p>Have you married yet?
+            <select name="Married">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </p>
+
+        <p>Last Education?
+            <select name="Education">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="1">Graduate</option>
+                <option value="0">Not Graduate</option>
+            </select>
+        </p>
+
+        <p>Self Employed?
+            <select name="Self_Employed">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="1">Self Employed</option>
+                <option value="0">Not Self Employed</option>
+            </select>
+        </p>
+
+        <p>Your Income
+            <input type="text" name="Income" placeholder="Income" required="required" />
+        </p>
+
+        <p>Your Property Area
+            <select name="Property">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="Rural">Rural</option>
+                <option value="Semiurban">Semiurban</option>
+                <option value="Urban">Urban</option>
+            </select>
+        </p>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <br>
+    <br>
+    <h1 class="{% if 'Eligible' in prediction_text %} green {% else %} red {% endif %}">{{prediction_text}}</h1>
+</body>
+</html>

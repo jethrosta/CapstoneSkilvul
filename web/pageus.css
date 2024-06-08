@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Sesuaikan dengan background-color dari landing_page.css */
+    color: #333; /* Sesuaikan dengan warna teks dari landing_page.css */
+}
+
+/* Header and Navigation */
+header {
+    background: #0044cc; /* Sesuaikan dengan warna background dari landing_page.css */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #0f140f;
+}
+
+.about-us {
+    padding: 50px 0;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/*----------MEMBER-------------*/
+/* Shine */
+.hover14 figure {
+	position: relative;
+}
+img{
+    width: 500px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    }
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5%;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5%;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    font-weight: 200;
+    margin: auto;
+    text-align: center;
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+.footer {
+    margin-top: 10%;
+    
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}

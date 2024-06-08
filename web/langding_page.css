@@ -1,0 +1,343 @@
+:root {
+    --basedark: rgba(46, 46, 46, 1);
+    --lightfirst: rgba(249, 249, 249, 1);
+    --maindark: rgba(67, 88, 195, 1);
+    --lightdark: rgba(165, 165, 165, 1);
+    --basefirst: rgba(58, 57, 57, 1);
+    --mainsecond: rgba(117, 138, 241, 1);
+    --secondarysecond: rgba(76, 121, 149, 1);
+    --mainfirst: #4C6EF6;
+    --basesecond: #585757;
+}
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(117,138,241);
+    background: -moz-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: -webkit-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#758af1",endColorstr="#f2fbfe",GradientType=1);
+    color: #333; /* Sesuaikan dengan warna teks dari landing_page.css */
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    color: var(--mainfirst);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: var(--maindark);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    background: var(--lightfirst);
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #0f140f;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: var(--maindark);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.cta-button {
+    background: var(--mainfirst);
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--secondarysecond);
+}
+
+/* Features Section */
+.features {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 1em;
+    color: var(--mainfirst);
+}
+
+.feature-item {
+    background: var(--maindark);
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: aliceblue;
+}
+
+/* App Overview Section */
+.app-overview {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.app-overview h1 {
+    margin-bottom: 1em;
+}
+
+.app-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.app-feature-item {
+    background: #fff;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 300px;
+}
+
+/* Footer */
+footer {
+    background: rgb(117,138,241);
+    background: -moz-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: -webkit-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#758af1",endColorstr="#f2fbfe",GradientType=1);
+    color: var(--maindark);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.3em;
+}
+
+/* Button Animation */
+.cta-button.animated {
+    animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    opacity: 0.8;
+    background: rgba(249, 249, 249, 0.40);
+    background: color(display-p3 0.9765 0.9765 0.9765 / 0.40);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+    backdrop-filter: blur(2px);
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-us {
+    padding: 50px 0;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5%;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5%;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    font-weight: 200;
+    margin: auto;
+    text-align: center;
+}
+/*----------MEMBER-------------*/
+/* Shine */
+.hover14 figure {
+	position: relative;
+}
+img{
+    width: 500px;
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    }
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 5%;
+    text-align: center;
+    color: #4C6EF6;
+}
+h2{
+    color:#4C6EF6;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5%;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    font-weight: 100;
+    margin: auto;
+    text-align: center;
+
+}
+.hover14 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+.footer{
+    margin-top: 10%;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}

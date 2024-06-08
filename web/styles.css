@@ -1,0 +1,145 @@
+:root {
+  --basedark: rgba(46, 46, 46, 1);
+  --lightfirst: rgba(249, 249, 249, 1);
+  --maindark: rgba(67, 88, 195, 1);
+  --lightdark: rgba(165, 165, 165, 1);
+  --basefirst: rgba(58, 57, 57, 1);
+  --mainsecond: rgba(117, 138, 241, 1);
+  --secondarysecond: rgba(76, 121, 149, 1);
+  --mainfirst: #4C6EF6;
+  --basesecond: #585757;
+}
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(117,138,241);
+    background: -moz-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: -webkit-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#758af1",endColorstr="#f2fbfe",GradientType=1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-y: scroll; /* Enable smooth scrolling for long forms */
+  }
+  
+  /* Form Container */
+  .form-container {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px;
+    max-width: 450px;
+    width: 90%;
+    border: 1px solid #ddd; /* Optional light border for separation */
+    border-radius: 1rem;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Vertical spacing between form elements */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--basesecond);
+    font-size: 22px;
+  }
+  
+  /* Input Container */
+  .input-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-container .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Consistent rounded corners */
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .input-container input:focus {
+    border-color: #4C6EF6; /* Blue highlight on focus */
+  }
+  
+  /* Button */
+  button {
+    padding: 15px 35px;
+    background-color: #4C6EF6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--maindark);
+  }
+  
+  /* Link */
+  a {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--mainfirst);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Show Password Button */
+  .show-password {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background-color: transparent;
+    color: #aaa;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .show-password:hover {
+    color: #333;
+  }
+  
+  /* Horizontal Line */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Light border for separation */
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  /* Add optional styling for placeholders (consider browser support) */
+  input::-webkit-input-placeholder {
+    color: #ccc; /* Light gray placeholder text */
+  }
+  
+  input:-moz-placeholder {
+    color: #ccc; /* Light gray placeholder text for Firefox */
+  }
+  

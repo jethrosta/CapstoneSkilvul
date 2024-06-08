@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Us</title>
+    <link rel="stylesheet" href="landing_page.css">
+    <style>
+        .hover14.column {
+            display: flex;
+            justify-content: center; /* Mengatur posisi elemen menjadi di tengah */
+            align-items: center; /* Mengatur posisi elemen menjadi di tengah */
+            flex-wrap: wrap; /* Membuat elemen baru akan diletakkan di bawah ketika container tidak cukup lebar */
+            gap: 20px; /* Jarak antara elemen */
+        }
+
+        .hover14.column > div {
+            flex: 1 1 200px; /* Membuat elemen memiliki lebar tetap sebesar 200px */
+            text-align: center; /* Mengatur teks menjadi di tengah */
+        }
+
+        .hover14.column figure img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="homepage.html" class="logo">Credit Flash</a>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="https://ocrai.jethro.my.id/">App</a></li>
+                <li><a href="homepage.html#features">Features</a></li>
+                <li><a href="#Page US">Page us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Our Team</h1>
+    <h2>Meet the talented individuals behind Credit Flash</h2>
+
+    <div class="hover14 column">
+        <div>
+            <figure><img src="jethro.jpg" /></figure>
+            <h3>Feivel Jethro E</h3>
+        </div>
+        <div>
+            <figure><img src="naris.jpg" /></figure>
+            <h3>Nariswari N.S</h3>
+        </div>
+        <div>
+            <figure><img src="najib.jpg" /></figure>
+            <h3>Ahmad Najib</h3>
+        </div>
+        <div>
+            <figure><img src="hanna.jpg" /></figure>
+            <h3>Laeli Hanna</h3>
+        </div>
+        <div>
+            <figure><img src="iyan.jpg" /></figure>
+            <h3>Hafiyan Sayidan</h3>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 BankingApp</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1 @@
+AI : https://www.kaggle.com/datasets/ssarkar445/handwriting-recognitionocr?select=train_v2

@@ -1,0 +1,130 @@
+:root {
+    --basedark: rgba(46, 46, 46, 1);
+    --lightfirst: rgba(249, 249, 249, 1);
+    --maindark: rgba(67, 88, 195, 1);
+    --lightdark: rgba(165, 165, 165, 1);
+    --basefirst: rgba(58, 57, 57, 1);
+    --mainsecond: rgba(117, 138, 241, 1);
+    --secondarysecond: rgba(76, 121, 149, 1);
+    --mainfirst: #4C6EF6;
+    --basesecond: #585757;
+}
+body {
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(117,138,241);
+    background: -moz-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: -webkit-linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    background: linear-gradient(270deg, rgba(117,138,241,1) 0%, rgba(242,251,254,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#758af1",endColorstr="#f2fbfe",GradientType=1);
+  }
+  
+  .centered-rectangle {
+    width: 37vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: fit-content;
+    display: grid;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    border: 2px dashed var(--mainfirst);
+    border-radius: 42px;
+    background-color: var(--lightfirst);
+  }
+  
+  .Head-1 {
+    text-align: center;
+  }
+  
+  .Head-1 h1 {
+    color: var(--maindark);
+  }
+  
+  .Head-1 p {
+    color: var(--lightdark);
+  }
+  
+  .Center-upload {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+  
+  .Center-upload p {
+    color: var(--basesecond);
+  }
+  
+.file {
+    color: var(--mainfirst);
+    text-decoration: underline;
+  }
+  
+  .button-upload {
+    text-align: center;
+    display: block;
+    align-items: center;
+  }
+  
+  .button-upload button {
+    background-color: var(--mainfirst);
+    color: var(--lightfirst);
+    border-radius: 42px;
+    width: 30vw;
+    height: 3em;
+    cursor: pointer;
+    margin-top: 3rem;
+  }
+  
+  .button-upload button:hover {
+    border-color: var(--lightfirst);
+    background: var(--mainfirst);
+    color: var(--lightfirst);
+  }
+  
+  #notification {
+    text-align: center;
+    color: var(--secondarysecond);
+    font-weight: 500;
+  }
+  
+  #notificationText {
+    color: var(--secondarysecond);
+  }
+  
+  .alert-popup {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: var(--maindark);
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    color: var(--lightfirst);
+  }
+
+  #result{
+    display: flex;
+    text-align: center;
+  }
+
+  .green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+#predictionText{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}

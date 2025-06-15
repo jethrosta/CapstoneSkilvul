@@ -89,7 +89,7 @@ The goal of Credit Flash is to automate the verification and fraud detection pro
 - Deploy mobile app for easier access by users.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 Feivel Jethro Ezhekiel <br>

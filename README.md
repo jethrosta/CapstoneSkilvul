@@ -82,22 +82,18 @@ The goal of Credit Flash is to automate the verification and fraud detection pro
 6. Access the frontend to upload documents and view loan eligibility results.
 
 ## Future Improvements
-Integrate advanced NLP techniques for better document understanding.
-
-Add multi-factor authentication to secure the platform.
-
-Improve model accuracy with more extensive and diverse datasets.
-
-Build a user-friendly dashboard for monitoring loan application statuses.
-
-Deploy mobile app for easier access by users.
+- Integrate advanced NLP techniques for better document understanding.
+- Add multi-factor authentication to secure the platform.
+- Improve model accuracy with more extensive and diverse datasets.
+- Build a user-friendly dashboard for monitoring loan application statuses.
+- Deploy mobile app for easier access by users.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-Feivel Jethro Ezhekiel
-Email: feiveljethroezhekiel@gmail.com
-GitHub: https://github.com/jethrosta
+Feivel Jethro Ezhekiel <br>
+Email: feiveljethroezhekiel@gmail.com <br>
+GitHub: https://github.com/jethrosta <br>
 
 Thank you for checking out Credit Flash! Feel free to contribute or reach out for collaborations. Let me know if you want me to help create the frontend HTML/CSS or deployment instructions!

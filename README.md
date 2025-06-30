@@ -4,6 +4,14 @@
 
 ---
 
+<div align="center">
+   <img src="https://github.com/jethrosta/CapstoneSkilvul/blob/main/image/1726833798333.jpeg">
+   <br>
+   <img src="https://github.com/jethrosta/CapstoneSkilvul/blob/main/image/1726833799904.jpeg">
+   <br>
+   <img src="https://github.com/jethrosta/CapstoneSkilvul/blob/main/image/1726833800462.jpeg">
+</div>
+
 ## Project Overview
 
 The goal of Credit Flash is to automate the verification and fraud detection process in loan applications by:
